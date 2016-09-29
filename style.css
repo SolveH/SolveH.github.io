@@ -46,4 +46,8 @@ html {
 #logos img {
 	width: 20%;
 	display: inline;
+	transition: 0.25s ease;
+}
+#logos img:hover {
+	transform: scale(1.2);
 }
