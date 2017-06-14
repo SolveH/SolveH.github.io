@@ -1,25 +1,149 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sølve</title>
+    <title>Sølve</title>
 	<meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="style.css"/>
 	<link rel="icon" type="image/ico" href="pictures/favicon.ico">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
 </head>
     
 <body>
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#aboutme">ABOUT ME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div>
+        <div id="topimg" class="jumbotron">
+            <h3 style="color: white; font-family: 'Concert One';text-align: center; padding-top: 45px;">Hey there, I'm</h3>
+            <h1 id="name" style="color: white; font-family: 'Concert One';text-align: center"><span>SØLVE BØ HUNVIK</span></h1>
+        </div>
+    </div>
+    <a name="aboutme" class="anchor" id="aboutme"></a>
+    <h1 id="chapter">About me</h1>
+    <div id="persona" name="aboutme">
+    <div class="media">
+      <div class="media-left media-top">
+        <img id="solve" src="pictures/profile.JPG" class="media-object" style="width:260px">
+      </div>
+      <div class="media-body">
+        <h2 class="media-heading">Sølve Bø Hunvik</h2>
+          <p><span class="glyphicon glyphicon-education"></span> <a href="https://www.ntnu.no/studier/bit">Informatics bachelor student at NTNU Gløshaugen, Trondheim</a></p>
+        <p>Welcome to my personal website. I come from a small town called Stryn in Norway known for its beautiful nature and design companies. That's where I went to primary, secondary, high school and I've spent my childhood years. I've also enjoyed a year at Folk High School in Stavanger where I got to test my creative skills creating short films, and doing many other fun things, without the obligation to grades. Right now I study Informatics at NTNU, where I find front-end development very intersting. On this website I'm planning to post the projects I participate in, and also my personal projects.</p>
+      </div>
+    </div>
+    </div>
+    <a name="projects" class="anchor" id="projects"></a>
+    <h1 id="chapter">Projects</h1>
+    <div class="btn-group">
+      <button id="itprojectsbtn" type="button" class="choice" onclick="itprojectClick()">IT projects</button>
+      <button id="personalprojectsbtn" type="button" class="choice" onclick="personalprojectClick()">Personal projects</button>
+    </div>
+    <div id="itprojects" class="content">
+        <div class="project">
+            <div class="media">
+              <div class="media-left">
+                <img src="pictures/weebologo.PNG" class="media-object" style="width:350px">
+              </div>
+              <div class="media-body">
+                  <h4 class="media-heading"><a href="https://github.com/roman-bachmann/ProjectWeebo">Weebo</a></h4>
+                <p class="projecttime"><span class="glyphicon glyphicon-calendar"></span> Spring 2017</p>
+                <p class="projecttime"><span class="glyphicon glyphicon-wrench"></span> React, node.js, mySQL, Bootstrap, CSS</p>
+                <p>Through my 4th semester at NTNU we had a project course called <a href="https://www.ntnu.no/studier/emner/TDT4140#tab=omEmnet">Software Engineering</a>. In the project we had a huge focus on the working process, and learned a lot by executing the development process in a realistic way. The goal in this project was to create something that would improve the way of learning in universities. </p>
+                  <p>Weebo is a learning platform where students are supposed to effectively find the best videos for any subchapter in a course. By letting teachers add chapters and associated subchapters to their course, and then allowing anyone related to the subject to share and vote videos for every subchapter, we created a product that could prove to be useful in many courses. Our student assistants, professors, ourselves and many others was pleased our product, so we got a product and a grade we are satisfied with. </p>
+                  <p> To learn something new we used React, and saw that it proved to be very useful and efficient for designing user interfaces. We had a course about databases in the same semester, so we got familiar with using mySQL and backend with node.js in practice. </p>
+              </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="media">
+              <div class="media-left">
+                <img src="pictures/bmsys.PNG" class="media-object" style="width:350px">
+              </div>
+              <div class="media-body">
+                  <h4 class="media-heading"><a href="http://folk.ntnu.no/martlun/final_edition/index/index.html#">Battery Management Systems</a></h4>
+                <p class="projecttime"><span class="glyphicon glyphicon-calendar"></span> Autumn 2015</p>
+                <p class="projecttime"><span class="glyphicon glyphicon-wrench"></span> HTML, CSS, JavaScript, Bootstrap</p>
+                <p>Already in my first semester at NTNU we had a project in <a href="https://www.ntnu.no/studier/emner/IT2805#tab=omEmnet">Web Technologies</a>, which is a course where we learned the basics about web development with HTML, CSS and JavaScript. In this project all of us worked on the different parts of the website, but I made things like the picture slide. Our customer was satisfied with the design of the website, and a member of our group was hired to keep developing the website.</p>
+              </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="media">
+              <div class="media-left">
+                <img src="pictures/fiolen.PNG" class="media-object" style="width:350px">
+              </div>
+              <div class="media-body">
+                  <h4 class="media-heading"><a href="www.fiolen.no">Fiolen</a></h4>
+                <p class="projecttime"><span class="glyphicon glyphicon-calendar"></span> January 2016</p>
+                <p class="projecttime"><span class="glyphicon glyphicon-wrench"></span> HTML, CSS, JavaScript</p>
+                <p>My mother runs a gift shop in Stryn. After finishing my first course about web development I wanted to make a better website for her shop, since her old website was made in with a bad "create your own website in 2 hours" application. I built the website from scratch using the technologies specified above.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="personalprojects" class="content">
+        <div class="project">
+            <div class="media">
+              <div class="media-left">
+                <img src="pictures/partyplace.JPG" class="media-object" style="width:350px">
+              </div>
+              <div class="media-body">
+                  <h4 class="media-heading">Lada</h4>
+                <p class="projecttime"><span class="glyphicon glyphicon-calendar"></span> Since easter 2015</p>
+                <p class="projecttime"><span class="glyphicon glyphicon-wrench"></span> Hammer, screw driver, jigsaw, paint, material, money etc.</p>
+                <p>I love building and creating things matching my own interests in plans and projects. At home I've spent my summer spare time building my own party place in an old barn. I want the style to renew old things in a cool way so I've used older materials for my bar, a long table made of an old seeder for horses and collected antique objects like old orange/ explosive crates, sacks from WW2, walls covered with wooden skiis etc. The party place is always under development, and I always come up with new ideas. </p>
+              </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="media">
+              <div class="media-left">
+                <img src="pictures/arduino.PNG" class="media-object" style="width:350px">
+              </div>
+              <div class="media-body">
+                  <h4 class="media-heading">Arduino projects</h4>
+                <p class="projecttime"><span class="glyphicon glyphicon-calendar"></span> Any time</p>
+                <p class="projecttime"><span class="glyphicon glyphicon-wrench"></span> Arduino + any necessary sensors/parts</p>
+                <p> After I had the course programming lab where we had a Zumo bot challenge where we achieved the 2nd place in the competition after hours of work on the code together with other assignments we had, I realized having Arduino projects is really fun. At home I've used my Arduino to make apps for collecting all my IR devices into one device, and I've had plans for making a self-watering plant system. Of course waiting for the parts I order on Ebay forces me to delay these plans, so I have many pending projects.</p>
+              </div>
+            </div>
+        </div>
+    </div>
     
     
-	<div id="midbox">
-		<div id="imgbox">
-			<img src="pictures/profile.JPG" id="profile"/>
-		</div>
-		<div id="infobox">
-			<h4>Sølve Bø Hunvik</h4>
-			<p>Informatikkstudent på NTNU Gløshaugen</p>
-			<div id="logos">
+    
+    <a name="contact" class="anchor" id="contact"></a>
+    <h1 id="chapter">Contact</h1>
+    <div id="contactcontent">
+    <p style="text-align:center;">Here you can find me on social media, Github or contact me via email. </p><p style="text-align:center;">Thank you for visiting my website.</p>
+    <div id="logos">
 				<a href="https://www.facebook.com/Solveh">
 					<img src="pictures/fblogo.png" alt="Facebook picture link"/>
 				</a>
@@ -29,12 +153,45 @@
 				<a href="https://no.linkedin.com/in/sølve-bø-hunvik-a13910120">
 					<img src="pictures/linkedinlogo.png" alt="Linkedin picture link"/>
 				</a>
-			</div>
-		</div>
-	</div>
-    
-    <!-- jQuery and Bootstrap -->
-    <script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
+                <a href="https://github.com/SolveH">
+                    <img src="pictures/githublogo.png" alt="Github picture link"/>
+                </a>
+                <a href="mailto:srb.hunvik@gmail.com">
+                    <img src="pictures/gmaillogo.png" alt="Gmail picture link"/>
+                </a>
+    </div>
+    </div>
+    <script>
+        var itprojectsbtn = document.getElementById("itprojectsbtn");
+        var personalprojectsbtn = document.getElementById("personalprojectsbtn");
+        var itprojects = document.getElementById("itprojects");
+        var personalprojects = document.getElementById("personalprojects");
+        function itprojectClick(){
+            itprojectsbtn.style.backgroundColor = "#008CBA";
+            itprojectsbtn.style.color = "#fff";
+            personalprojectsbtn.style.backgroundColor = "#fff";
+            personalprojectsbtn.style.color = "#000";
+            itprojects.style.display = "inline";
+            personalprojects.style.display = "none";
+        }
+        function personalprojectClick(){
+            personalprojectsbtn.style.backgroundColor = "#008CBA";
+            personalprojectsbtn.style.color = "#fff";
+            itprojectsbtn.style.backgroundColor = "#fff";
+            itprojectsbtn.style.color = "#000";
+            personalprojects.style.display = "inline";
+            itprojects.style.display = "none";
+        }
+        itprojectClick();
+    </script>
+    <script>
+    //https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+    $('a[href*=\\#]').on('click', function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
+    </script>
+
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
