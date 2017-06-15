@@ -14,14 +14,10 @@ body {
   background-size: cover;
     height: 450px;
 }
-
-
 #logos {
     text-align: center;
-
 }
 #logos img {
-	
 	display: inline;
 	transition: 0.25s ease;
 }
@@ -80,7 +76,6 @@ body {
 }
 #persona {
     border-radius: 5px;
-    
     font-family: 'Roboto Condensed';
 }
 #solve {
@@ -91,7 +86,6 @@ body {
 #chapter {
     overflow: hidden;
     text-align: center;
-   
     font-family: var(--baloo);
 }
 #chapter:before,
@@ -149,9 +143,6 @@ body {
     font-family: 'Roboto Condensed';
 }
 
-.project a {
-    color: #008CBA;
-}
 .media-object {
     border-radius: 5px;
 }
