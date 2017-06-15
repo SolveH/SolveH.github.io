@@ -138,9 +138,11 @@ body {
     border: 1px solid;
     border-radius: 5px;
     border-color: gainsboro;
-    
     margin-top: 10px;
     font-family: 'Roboto Condensed';
+}
+.project img {
+    border-radius: 5px;
 }
 
 .media-object {
@@ -168,6 +170,7 @@ body {
         padding: 20px 0px 20px 20px;
         margin: auto;
         width: 70%;
+        margin-top: 10px;
     }
     .project img {
         width: 350px;
@@ -192,10 +195,12 @@ body {
     .project {
         padding: 20px 0px 20px 20px;
         margin: auto;
+        margin-top: 10px;
         width: 90%;
     }
     .project img {
-        width: 220px;
+        width: 350px;
+        margin: auto;
     }  
     #logos img {
         width: 10%;
@@ -215,11 +220,13 @@ body {
     }
     .project {
         padding: 5px 0px 5px 5px;
-        margin 0px;
-        width: 100%;
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
     }
     .project img {
-        width: 150px;
+        width: 200px;
+        margin: auto;
     } 
     #logos img {
         width: 15%;
