@@ -14,8 +14,8 @@
     <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
 </head>
-    
-<body>
+<header>    
+
     <nav id="navbar" class="navbar navbar-default navbar-fixed-top hidden-xs">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,6 +39,8 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+    </header>
+    <body>
     <div>
         <div id="topimg" class="jumbotron">
             <h3 style="color: white; font-family: 'Concert One';text-align: center; padding-top: 45px;">Hey there, I'm</h3>
@@ -185,10 +187,20 @@
         itprojectClick();
     </script>
     <script>
-    //https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
-    $('a[href=#]').on('click', function(event){     
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    //Found on https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
     });
     </script>
 
