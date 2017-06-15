@@ -4,6 +4,9 @@
     --baloo: 'Baloo', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+
+
+
 body {
     padding-bottom: 50px;
 }
@@ -22,7 +25,7 @@ body {
 
 }
 #logos img {
-	width: 5%;
+	
 	display: inline;
 	transition: 0.25s ease;
 }
@@ -81,8 +84,7 @@ body {
 }
 #persona {
     border-radius: 5px;
-    width: 60%;
-    margin: auto;
+    
     font-family: 'Roboto Condensed';
 }
 #solve {
@@ -146,12 +148,11 @@ body {
     border: 1px solid;
     border-radius: 5px;
     border-color: gainsboro;
-    padding: 20px 0px 20px 20px;
-    margin: auto;
-    width: 70%;
+    
     margin-top: 10px;
     font-family: 'Roboto Condensed';
 }
+
 .project a {
     color: #008CBA;
 }
@@ -163,4 +164,67 @@ body {
 }
 #contactcontent {
     font-family: 'Roboto Condensed';
+}
+@media screen and (min-width: 769px) {
+    /* STYLES HERE */
+    #persona {
+        width: 60%;
+        margin: auto;
+    }
+    #persona img {
+        width: 260px;
+    }
+    .project {
+        padding: 20px 0px 20px 20px;
+        margin: auto;
+        width: 70%;
+    }
+    .project img {
+        width: 350px;
+    }
+    #logos img{
+        width: 5%;
+    }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    /* STYLES HERE */
+    #persona {
+        width: 90%;
+        margin: auto;
+    }
+    #persona img {
+        width: 150px;
+    }
+    .project {
+        padding: 20px 0px 20px 20px;
+        margin: auto;
+        width: 90%;
+    }
+    .project img {
+        width: 220px;
+    }  
+    #logos img {
+        width: 10%;
+    }
+}
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE */
+    #persona {
+        width: 100%;
+        margin: auto;
+    }
+    #persona img {
+        width: 100px;
+    }
+    .project {
+        padding: 5px 0px 5px 5px;
+        margin 0px;
+        width: 100%;
+    }
+    .project img {
+        width: 150px;
+    } 
+    #logos img {
+        width: 15%;
+    }
 }
