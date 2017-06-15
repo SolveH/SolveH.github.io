@@ -95,7 +95,7 @@ body {
 #chapter {
     overflow: hidden;
     text-align: center;
-    padding-top: 45px;
+   
     font-family: var(--baloo);
 }
 #chapter:before,
@@ -167,6 +167,9 @@ body {
 }
 @media screen and (min-width: 769px) {
     /* STYLES HERE */
+    #chapter {
+         padding-top: 45px;
+    }
     #persona {
         width: 60%;
         margin: auto;
@@ -188,6 +191,9 @@ body {
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
     /* STYLES HERE */
+    #chapter {
+        padding-top: 0px;
+    }
     #persona {
         width: 90%;
         margin: auto;
@@ -209,6 +215,9 @@ body {
 }
 @media only screen and (max-device-width: 480px) {
     /* STYLES HERE */
+    #chapter {
+        padding-top: 0px;
+    }
     #persona {
         width: 100%;
         margin: auto;
