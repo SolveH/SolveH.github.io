@@ -3,6 +3,9 @@
     --textnav:#545659;
     --baloo: 'Baloo', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+html {
+    overflow-x: hidden;
+}
 body {
     padding-bottom: 50px;
 }
