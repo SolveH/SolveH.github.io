@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <title>Vinter</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONTS
+        Imprima for headlines, Ubuntu Condensed for content, Fira Sans for footer
+    -->
+    <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu%20Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira%20Sans' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root{
+            --seasoncolor: #ACE4EA;
+        }
+    </style>
+</head>
+<body>
+<nav class="container">
+    <div class="topnav" id="myTopnav">
+        <a href="#"><img src="images/favicon.png" width="30"></a>
+            <a href="spring.html">Vår</a>
+            <a href="summer.html">Sommer</a>
+            <a href="index.html">Høst</a>
+            <a id="currentPage" href="winter.html">Vinter</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</nav>
+    <img class="topbackground" src="images/winter/winter.jpg" alt="toppbilde av høsten">
+    <div class="content container">
+        <div class="chapter">
+            <h1 class="chaptername">Vinter</h1>
+            <div id="seasoninfo">
+                <div id="infopicdiv">
+                    <img src="images/winter/winter2.jpg" alt="hjort på høsten" />
+                </div>
+                <div id="infotextdiv">
+                	<h4>Hva er vinteren?</h4>
+                	<p>Vinter er en av de fire årstidene i tempererte og arktiske soner på kloden og består på den nordlige halvkule tradisjonelt av månedene desember, januar og februar. På den sydlige halvkule er det samtidig sommer, vintermånedene er der juni, juli og august.
+					Den astronomisk vinteren er perioden fra vintersolverv til vårjevndøgn, og de sammenfallende astrologiske vintertegnene er steinbukken, vannmannen og fiskene.
+					Innen meteorologien defineres vinteren gjerne som den perioden da normal døgnmiddeltemperatur for det aktuelle stedet under 0 °C. I artikkelen om årstid er oppgitt når vinteren etter dette begynner en del steder i Norge. I Norge er det langs kysten flere steder som ikke har vinter etter denne definisjonen, blant annet Stavanger og Bergen.
+                	På primstaven markerte vinterdagen begynnelsen av vinterhalvåret. Været på denne merkedagen, som blir tidfestet til 14. oktober, skulle gi en pekepinn på hvordan været skulle bli den kommende vinteren</p>
+                    <h4>Hvorfor vinteren?</h4>
+                    <p>Vinteren er årstiden for både hjemmekos og aktivitet. Når termometeret begynner å krype nedover, er anledningen perfekt for å fyre i peisen og slappe av med en god bok. I tillegg muliggjør vintersesongen noen av våre favorittaktiviteter: Stå på ski, ake, ha snøballkrig og ha en god unnskyldning for å sitte inne og game.</p><p id="raintext">La det  snø: <button class="rain" onclick="rain('winter')"><i class="fa fa-snowflake-o"></i></button></p>
+                </div>
+            </div>
+            <div class="chapter">
+                <h1 class="chaptername">Aktiviteter</h1>
+                <div id="activitycontent">
+                    <button id="firstbtn" type="button" class="choice" data-content="#firstcontent" >Stå på ski</button>
+                    <button id="secondbtn" type="button" class="choice" data-content="#secondcontent" >Ake</button>
+                    <button id="thirdbtn" type="button" class="choice" data-content="#thirdcontent">Lage snømann</button>
+                    <div id="firstcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <!-- BILDESTØRRELSE FRA BIRME SATT TIL 1000x850 px -->
+                                
+                                <img src="images/winter/skiing.jpg" alt="ski bilde"/>
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i>Fra snøen faller til litt utpå våren</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Norske fjell</p>
+                                <p>Skiidrett omfatter en rekke idretter som hovedsakelig foregår på vinterstid, bruk av ski er et sentralt moment i idretten. En ski er et redskap som kan brukes som et fremkomstmiddel til bruk på snø. Skiene har trolig vært i bruk i tusenvis av år, i vinterlige/alpine miljøer. Vanligvis går konkurransene ut på å komme seg fortest fra et punkt til et annet, men det kan også gå ut på å få best mulig stilkarakterer, gitt av flere dommere.
+De norske skiløperkompaniene på 1700-tallet utviklet konkurranseidretten. Det ble arrangert konkurranser for å skape gode soldater på ski, det var viktig at soldatene var utholdende, at de kunne hoppe over hinder og skyte på ski i nedoverbakke. De ble trent opp i dette, som i dag er blitt disiplinene langrenn, skihopp og skiskyting.
+Den norske offiseren Henrik Angell opprettet den først skiskolen i Montenegro og medvirket til opprettelsen av den første skiskolen i de franske alpene i 1903.
+                                </p>
+                                <a href="https://www.visitnorway.no/aktiviteter-og-attraksjoner/utendorsaktiviteter/ski/">Mer info om ski i Norge finnes her</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="secondcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <img src="images/winter/akebrett.jpg" alt="akebrett bilde"/>
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Så lenge vi har snø</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Akebakker</p>
+                                <p>Aking er en relativt lite utbredt idrett i Norge. I Norge er idretten organisert under Norges Idrettsforbund og Olympiske Komité, i særforbundet Norges Ake-, Bob- og Skeletonforbund.
+Aking som idrett foregår ved at man ligger på en spesialkjelke, kalt rodel, og aker nedover en islagt bane.
+Barneaking foregikk og foregår fortsatt ved at en trekker med seg en kjelke eller et akebrett opp en bakke, og aker ned igjen. Før biltrafikken tetnet til, var det vanlig å bruke lengre strekninger av veinettet til aking. Barna varslet selv hverandre dersom det kom bil(er). På enkelte strekninger var det interessekonflikt mellom de som ville ha veien sandstrødd, og de som ville ake.
+Aking som idrett deles igjen inn i naturbaneaking og kunstbaneaking.</p>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="thirdcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <img src="images/winter/snowman.jpg" alt="snømann bilde"/>
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Så lenge snøen er å finne</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Bak i hagen</p>
+                                <p>En snømann bygges ofte av tre store baller eller kuler av kram snø som blir satt oppå hverandre som kropp og hode. Det er umulig å lage snømann av nysnø i 15 kuldegrader. For å lage ansiktstrekk kan man benytte steiner eller knapper til øyne og munn og gulrot til nese. Noen gir snømannen kvister til hår eller armer og kler den med lue, skjerf eller ting som ligner på en hatt. Ikke sjelden lar man snømannen holde en kost, trestokk eller pinne. På denne måten kan man betrakte skulpturen som en improvisjert kunstinstallasjon.
+Snømenn blir ofte lagd av to kuler i Øst-Asia. I Japan blir de kalt «snø-daruma» (雪だるま, yuki daruma) etter den runde formen på en daruma, en populær, dokkeliknende lykkebringer.
+Mer avansert utformede snøfigurer kalles gjerne snø- eller isskulpturer. Slike lages av profesjonelle og amatører flere steder i verden, for eksempel under Snøfestivalen i Sapporo som har blitt arrangert hver vinter siden 1949. Det er liknende isskulpturarrangementer også blant annet i Harbin i Kina.</p>
+                                <a href="https://no.wikipedia.org/wiki/Sn%C3%B8mann">Mer info om snømannbygging her</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="musicchapter" class="chapter">
+                <h1 class="chaptername">Musikk til vinteren</h1>
+                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/nGdFHJXciAQ" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="documentation.html"> Klikk her for dokumentasjon</a>
+    </footer>
+    <script src="js/destination.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/seasons.js"></script>
+<script src="js/hamburger-toggle.js"></script>
+</body>
+</html>

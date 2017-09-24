@@ -183,7 +183,7 @@ body {
     }
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+@media screen and (min-device-width: 601px) and (max-device-width: 768px) { 
     /* STYLES HERE */
     #chapter {
         padding-top: 0px;
@@ -209,7 +209,7 @@ body {
         width: 10%;
     }
 }
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 600px) {
     /* STYLES HERE */
     #chapter {
         padding-top: 0px;

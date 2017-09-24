@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <title>Vår</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONTS
+        Imprima for headlines, Ubuntu Condensed for content, Fira Sans for footer
+    -->
+    <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu%20Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira%20Sans' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root {
+            --seasoncolor: #40F020;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="container">
+    <div class="topnav" id="myTopnav">
+        <a href="#"><img src="images/favicon.png" width="30"></a>
+            <a id="currentPage" href="spring.html">Vår</a>
+            <a href="summer.html">Sommer</a>
+            <a href="index.html">Høst</a>
+            <a href="winter.html">Vinter</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</nav>
+    <img class="topbackground" src="images/spring/spring.jpg" alt="toppbilde av høsten">
+    <div class="content container">
+        <div class="chapter">
+            <h1 class="chaptername">Vår</h1>
+            <div id="seasoninfo">
+                <div id="infopicdiv">
+                    <img src="images/spring/spring2.jpg" alt="hjort på høsten" />
+                </div>
+                <div id="infotextdiv">
+                    <h4>Hva er våren?</h4>
+                    <p>Våren eller foråret er en av de tradisjonelle fire årstidene, og består av månedene mars, april og mai. Tidlig vårtegn: Snøklokker. Den astronomiske våren varer fra vårjevndøgn til sommersolverv, og de sammenfallende astrologiske vårtegnene er Væren, Tyren og Tvillingene. Innen meteorologien defineres våren gjerne som den perioden da normal døgnmiddeltemperatur for det aktuelle stedet er mellom 0 og 10 °C og stigende. Tradisjonelt er våren positivt ladet. Våren er et symbol for barndom, for å våkne opp av dvalen og for oppblomstring.</p>
+                    <h4>Hvorfor våren?</h4>
+                    <p>Våren er selve symbolet på bedre tider. Vinterens kulde har begynt å legge seg, lysere tider er i vente, og plantene farger atter naturen grønn. Vårmånedene byr også på utallige fridager, slik at man kan nyte den stigende varmen i ro og mak.</p>
+                    <p id="raintext">La det falle blader: <button class="rain" onclick="rain('spring')"><i class="fa fa-envira"></i></button></p>
+                </div>
+            </div>
+            <div class="chapter">
+                <h1 class="chaptername">Aktiviteter</h1>
+                <div id="activitycontent">
+                    <button id="firstbtn" type="button" class="choice" data-content="#firstcontent">Grilling</button>
+                    <button id="secondbtn" type="button" class="choice" data-content="#secondcontent">Gå i bunad</button>
+                    <button id="thirdbtn" type="button" class="choice" data-content="#thirdcontent">Fjelltur</button>
+                    <div id="firstcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <!-- BILDESTØRRELSE FRA BIRME SATT TIL 1000x850 px -->
+
+                                <img src="images/spring/grill.jpg" alt="bærplukking bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Mai og utover</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i>Hus, hytter, hager og skogen</p>
+                                <p>
+                                    Grilling er en måte å varmetilberede mat på, slik at maten varmes i stor grad av strålingsvarme (elektromagnetisk stråling), i motsetning til steking som overfører bevegelsesenergien gjennom kollisjoner mellom molekylene i varmeleder og maten. Grillmat kjennetegnes av at overflaten gjerne blir litt sprø, mens indre deler kan variere fra rå til godt stekt, avhengig av kokkens erfaring, steketid og avstand mellom mat og varmekilde. Det meste kan grilles, men matvareprodukter av kjøtt og fisk er mest vanlig å bruke, sammen med noen typer grønnsaker og brødvarer.
+                                </p>
+                                <a href="https://www.matprat.no/matnyttig/metoder/grilling/grunnkurs-i-grilling/">Ta et grunnkurs i grilling.</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="secondcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <img src="images/spring/bunad.jpg" alt="bunad bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Konfirmasjonssesongen</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Over det vidstrakte land</p>
+                                <p>
+                                    Bunad er et nyord som fra 1900-tallet har blitt brukt om flere typer klesdrakter i Norge. I faglig forstand brukes begrepet om moderne, historiserende festdrakter, for det meste konstruert i første halvdel av 1900-tallet og ofte svært løst basert på tradisjon. Disse festdraktene var inspirert av folkedrakter, det vil si tradisjonelle klesplagg brukt av bondebefolkningen i deler av Norge på 1700–1800-tallet.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="thirdcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <img src="images/spring/fjelltur.jpg" alt="potetplukking bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Så snart snøen går</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Norske fjell og fjorder</p>
+                                <p>
+                                    Godt fjellvett handler ikke bare om hva du skal og ikke skal, men om å ha et bevisst forhold til valgene du tar før, under og etter tur. Uansett om du er en fersking eller en dreven fjellvandrer, anbefaler vi at du har Fjellvettreglene med deg på tur - hele året. Her kommer fjellvettreglene. </p>
+                                <ol>
+                                    <li>Legg ikke ut på langtur uten trening.</li>
+                                    <li>Meld fra hvor du går.</li>
+                                    <li>Vis respekt for været og værmeldingene.</li>
+                                    <li>Vær rustet mot uvær og kulde selv på korte turer. Ha alltid med ryggsekk og det utstyret fjellet krever.</li>
+                                    <li>Lytt til erfarne fjellfolk.</li>
+                                    <li>Bruk kart og kompass.</li>
+                                    <li>Gå ikke alene.</li>
+                                    <li>Vend i tide – det er ingen skam å snu.</li>
+                                    <li>Spar på kreftene og grav deg inn i snøen om nødvendig.</li>
+                                </ol>
+                                <a href="https://www.dnt.no/">Alt om fjellturer kan du finne her.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="musicchapter" class="chapter">
+                <h1 class="chaptername">Musikk til våren</h1>
+                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/l-dYNttdgl0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="documentation.html"> Klikk her for dokumentasjon</a>
+    </footer>
+    <script src="js/destination.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/seasons.js"></script>
+<script src="js/hamburger-toggle.js"></script>
+</body>
+
+</html>

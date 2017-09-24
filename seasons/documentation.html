@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dokumentasjon</title>
+</head>
+<body>
+	<h3>Bruk av node og express</h3>
+	<p>Vi bruker et express script som kjører i node til å levere nettsiden, samt svare på ajax kall. Scriptet heter server.js , og er gjengitt her:</p>
+	<code>
+			const express = require('express') <br>
+			const app = express() <br>
+			<br>
+			const port = 8082;<br>
+			<br>
+			// Uses the function redirect to current season() for all request to / <br>
+			app.get("/", redirectToCurrentSeason); <br>
+			<br>
+			// Exposes all static content in the folder public_html <br>
+			app.use(express.static('public_html')) <br>
+			<br>
+			
+			app.listen(port, function () {<br>
+			  console.log('Listening on ' + port + '!') <br>
+			}) <br>
+			
+			<br>
+			
+			/** <br>
+			 * Redirects the request based on the current(system date) season. <br>
+			 * @param {*} req A request object <br>
+			 * @param {*} res The response object <br>
+			 */ <br>
+			function redirectToCurrentSeason(req, res) { <br>
+			  // The seasonal pages, winter, spring, summer, fall <br>
+			  let seasonPages = ["index.html", "index.html", "index.html", "index.html"]; <br>
+			  let currentSeason = getSeasonForCurrentDate(); <br>
+			  let seasonPageUrl = "/" + seasonPages[currentSeason]; <br>
+			  res.redirect(seasonPageUrl) <br>
+			} <br>
+			
+			/** <br>
+			 * Return the season for todays date <br>
+			 * @return {number} The season for todays date <br>
+			 */ <br>
+			function getSeasonForCurrentDate() { <br>
+			  let todaysDate = new Date(); <br>
+			  let currentSeason = getSeasonFromDate(todaysDate); <br>
+			  return currentSeason; <br>
+			}
+			
+			/** <br>
+			 * Takes a date and returns the season of that date <br>
+			 * @param {Date} date <br>
+			 * @return {Number} season <br>
+			 */ <br>
+			function getSeasonFromDate(date){ <br>
+			  let month = date.getMonth(); <br>
+			  if (month <= 1 || month == 11) return 0; <br>
+			  if (month >= 2 && month <= 4) return 1; <br>
+			  if (month >= 5 && month <= 7) return 2; <br>
+			  if (month >= 8 && month <= 10) return 3; <br>
+			} <br>
+		</code>
+
+		<h3>Bruk port 8082</h3>
+		<p>
+			Siden er tilgjengelig på http://it2810-19.idi.ntnu.no:8082 <br>
+			portnummeret bestemmes på linje 4 i server.js
+		</p>
+
+		<h3>Bruk CCS Flexible Box Layout</h3>
+		<p>Brukes blant annet i navbar, men også mye på innholdet. Se linje 166 i /css/style.css</p>
+
+		<h3>Navigasjonsbaren skal implementeres fra bunnen av</h3>
+		<p>Navigasjonsbaren er på linje 32 til linje 39 i index.html, samt 30 til 66 i style.css</p>
+
+		<h3>Ajax funksjonalitet</h3>
+		<p>
+			I navbaren brukes det i stedet for lenker en funksjon som laster inn en helt ny html side og erstatter det som er i browseren med den nye siden. <br>
+			Ajax kallet gjøres ved $.get(.., .., ..) i destination.js
+		</p>
+
+		<h3>Bruke jQuery</h3>
+		<p>Mye av jQuery bruken kan en f.eks se i buttons.js</p>
+		<h4>jQuery selector</h4>
+		<p>Se linje 10 i buttons.js der vi bruker en klasse selector</p>
+		<h4>Funksjon som parameter</h4>
+		<p>Se linje 10 til 12 i buttons.js</p>
+		<h4>Form for eventhåndtering</h4>
+		<p>Linje 10 i buttons.js brukes .on("click", ..) for å koble opp eventhåndtering ved klikk.</p>
+
+		<h3>Responsiv design</h3>
+		<p>Se media-queries fra og med linje 215 i style.css</p>
+
+		<h3>Bidrag skal være dokumentert</h3>
+		<p>Filen er levert på Blackboard. </p>
+</body>
+</html>

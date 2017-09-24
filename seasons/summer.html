@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <title>Summer</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONTS
+        Imprima for headlines, Ubuntu Condensed for content, Fira Sans for footer
+    -->
+    <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu%20Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira%20Sans' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         :root {
+            --seasoncolor: #f9d62e;
+        }
+
+        .topnav a:nth-child(3) {
+            border-bottom: 3px solid var(--seasoncolor);
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="container">
+    <div class="topnav" id="myTopnav">
+        <a href="#"><img src="images/favicon.png" width="30"></a>
+            <a href="spring.html">Vår</a>
+            <a id="currentPage" href="summer.html">Sommer</a>
+            <a href="index.html">Høst</a>
+            <a href="winter.html">Vinter</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</nav>
+    <img class="topbackground" src="images/summer/summer.jpg" alt="toppbilde av høsten">
+    <div class="content container">
+        <div class="chapter">
+            <h1 class="chaptername">Sommer</h1>
+            <div id="seasoninfo">
+                <div id="infopicdiv">
+                    <img src="images/summer/summer2.jpg" alt="hjort på høsten" />
+                </div>
+                <div id="infotextdiv">
+                    <h4>Hva er sommeren?</h4>
+                    <p>Sommeren er den delen av året når solen står høyt på himmelen og den gjennomsnittlige dagtemperaturen er høyest. For den del av befolkningen som arbeider med naturens avkastning er derfor sommeren årstiden for slit og arbeid, mens den for resten av befolkningen er det årstiden for ferie og fritid.</p>
+                    <h4>Hvorfor sommeren?</h4>
+                    <p>Sommeren er tiden for å slappe av. Med lyse dager, høye temperaturer og mye ferie, er det liten tvil om at de fleste er takknemlige når sommeren endelig kommer. I Norge har de fleste fellesferie i sommersesongen. Da venter late dager på solfylte strender i populære reisemål som Spania, Hellas og Danmark. Også her hjemme kan man finne lettkledde sjeler som forsøker å kompensere for vinterhalvårets D-vitamin-mangel ved å tilbringe feriedagene ute i solen.</p><p id="raintext">La det regne badeballer: <button class="rain" onclick="rain('summer')"><i class="fa fa-futbol-o"></i></button></p>
+                </div>
+            </div>
+            <div class="chapter">
+                <h1 class="chaptername">Aktiviteter</h1>
+                <div id="activitycontent">
+                    <button id="firstbtn" type="button" class="choice" data-content="#firstcontent">Bading</button>
+                    <button id="secondbtn" type="button" class="choice" data-content="#secondcontent">Feriere</button>
+                    <button id="thirdbtn" type="button" class="choice" data-content="#thirdcontent">Telttur</button>
+                    <button id="fourthbtn" type="button" class="choice" data-content="#fourthcontent">Pilse i parken</button>
+                    <div id="firstcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <!-- BILDESTØRRELSE FRA BIRME SATT TIL 1000x850 px -->
+
+                                <img src="images/summer/bade.jpg" alt="bading bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Så snart isen har gått, eller litt før</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Norske vann</p>
+                                <p>
+                                    Svømming er spesielt fin kondisjonstrening ved astma, men også her skal en følge reglene for intervalltrening. Det er flere med astma som har utmerket seg i svømmekonkurranser på meget høyt nivå. Problem kan skapes av mye klor i bassengvann og særlig i innendørs bassenger der det kan være mye klor i luften like over vannet. NB! I henhold til en undersøkelse av belgiske forskere publisert i 2003 i "Occupational and Environmental Medicine" kan klorgassene over vannet i innendørs svømmebasseng føre til astma. De mener at dette kan være en av grunnene til den sterke økningen av astma de siste 30-40 årene. Forskerne viste at luften over vannflaten inneholder klorforbindelser (bl.a. NCl3) som gass og aerosol med uttalt virkning som oksidant og evne til å skade slimhinnene i luftveiene. Også opphold ved bassengkanten uten svømming medfører en viss risiko.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="secondcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <img src="images/summer/ferie.jpg" alt="ferie bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Midt på sommeren og utover høsten</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Hele verden</p>
+                                <p>
+                                    Ordet ferie kommer opprinnelig fra det latinske flertallsordet feriae som var religiøse festdager da en ikke drev handel og forretninger. Ordet betegnet seinere en periode da undervisning og rettsmøter opphørte. Ferie kom som et fremmedord i norsk på slutten av 1800-tallet. Ferie kan oversettes med holiday («fridag») på britisk-engelsk og vacation («ledighet») på amerikansk. I Norge er ferie for lønnsmottakere regulert av ferieloven. Ferieloven sikrer alle arbeidstagere 25 virkedager ferie hvert år. Med virkedager menes alle dager unntatt søndager og lovfestede helligdager; 25 feriedager tilsvarer derfor fire uker pluss én dag (den såkalte Grodagen) hvert kalenderår. Tariffoppgjøret i 2000/2001 ga mange grupper en femte ferieuke, men denne ekstra ferien er ikke en del av ferieloven, og det er et lokalt spørsmål ved hver enkelt arbeidsplass om de ansatte har en ekstra uke fri. Arbeidstakere som fyller 60 år i ferieåret får en ekstra ferieuke, til sammen minimum 30 dager ferie.[1] Feriepenger skal beregnes med 10,2 % av arbeidsvederlag som er utbetalt i året før ferien tas, uansett varighet av arbeidsforholdet. For arbeidstakere over 60 år er utgjør feriepengene 12,5 %.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="thirdcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <img src="images/summer/telttur.jpg" alt="telttur bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Helger</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Skog og fjell, eller campingplass</p>
+                                <p>
+                                    En ordentlig telttur i skog og mark med overnatting, kan skape uforglemmelige minner. Finne en fin leirplass, kjenne stillheten når mørket senker seg og ikke minst våkne opp utendørs, er noe alle burde gi et forsøk. Men pass deg, for du kan fort bli hekta på det herlige friluftslivet! En ordentlig telttur i skog og mark med overnatting, kan skape uforglemmelige minner. Finne en fin leirplass, kjenne stillheten når mørket senker seg og ikke minst våkne opp utendørs, er noe alle burde gi et forsøk. Men pass deg, for du kan fort bli hekta på det herlige friluftslivet! – Noe av det fineste med telting er friheten det fører med seg. Med et telt har alle hytte med utsikt og egen strandlinje! Du bærer med deg hjemmet ditt for turen, og kan sette det opp spontant akkurat der du syns det er finest, sier Nora Helliksen hos Helsport. Både erfaring, utstyr, rute og distanse er viktig for forberedelsene. Teltekspertene i Helsport har derfor hjulpet oss med noen grunnleggende råd for en vellykket telttur.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="fourthcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <img src="images/summer/pilspark.jpg" alt="telttur bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Helger</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Parken</p>
+                                <p>
+                                    Unge Høyre maner til sivil ulydighet, og tar seg en pils i parken. Nå vil de fjerne loven som gjør det ulovlig å nyte alkohol på offentlig sted.
+                                    – Teit lov
+                                    Almli tror ikke en slik lovendring vil føre til mer fyll, men heller at nordmenn får mer kontinentale alkoholvaner. Heller en pils i parken, enn hjemmebrent på privatfest, sier ungdomspolitikeren.
+                                    – Vi synes dette er en teit lov. Nå om sommeren er det en sjelden gang godt vær i Nord-Trøndelag, da må det være greit å ta seg en pils i sola, selv om man sitter i en park, sier Almli.
+                                    Unge Høyre påpeker også at politiet må ha bedre ting å bruke ressursene sine på, og viser til at det er lov å nyte alkohol ved offentlige steder i Danmark, uten at dette utgjør et stort problem der.
+                                    – Det er latterlig at politiet må bruke ressurser på dette. Vi mener at loven om at man ikke kan drikke alkohol offentlig bør oppheves, slik at folk kan ta seg en utendørs pils med venner uten at de trenger å være redd for å bli bøtelagt, sier hun.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="musicchapter" class="chapter">
+                <h1 class="chaptername">Musikk til sommeren</h1>
+                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/g65oWFMSoK0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="documentation.html"> Klikk her for dokumentasjon</a>
+    </footer>
+    <script src="js/destination.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/seasons.js"></script>
+<script src="js/hamburger-toggle.js"></script>
+</body>
+
+</html>

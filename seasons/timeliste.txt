@@ -1,0 +1,28 @@
+Arbeidstimene brukt har ofte vært en kombinasjon av flere ting (design/koding/testing)
+Cirka antall timer brukt på hver aktivitet for hvert gruppemedlem er gjengitt under.
+
+Mathias Breistein 
+- Koding: 10 timer
+- Testing: 4 timer
+- Design: 2 timer
+
+
+Sindre Skåland Brun 
+- Koding: 8 timer
+- Testing: 2 timer
+- Design: 2 timer
+- Refactoring: 2 timer
+- Oppsett server: 2 timer
+
+
+Erik Dymbe 
+- Koding: 6 timer
+- Styling: 8 timer
+- Testing: 2 timer
+
+
+Sølve Bø 
+- Design: 4 timer
+- Koding: 10 timer
+- Testing: 2 timer
+

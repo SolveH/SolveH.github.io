@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <title>Autumn</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONTS
+        Imprima for headlines, Ubuntu Condensed for content, Fira Sans for footer
+    -->
+    <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu%20Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fira%20Sans' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         :root {
+            --seasoncolor: #B0703C;
+        }
+        
+        .topnav a:nth-child(4) {
+            border-bottom: 3px solid var(--seasoncolor);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <div class="topnav" id="myTopnav">
+            <a href="#"><img src="images/favicon.png" width="30"></a>
+            <a href="spring.html">Vår</a>
+            <a href="summer.html">Sommer</a>
+            <a href="index.html">Høst</a>
+            <a href="winter.html">Vinter</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+    <img class="topbackground" src="images/autumn/autumn.jpg" alt="toppbilde av høsten">
+    <div class="content container">
+        <div class="chapter">
+            <h1 class="chaptername">Høst</h1>
+            <div id="seasoninfo">
+                <div id="infopicdiv">
+                    <img src="images/autumn/autumn2.jpg" alt="hjort på høsten" />
+                </div>
+                <div id="infotextdiv">
+                    <h4>Hva er høsten?</h4>
+                    <p>Høst eller etterår er en av de fire årstidene i tempererte og arktiske soner på kloden og består i tradisjonell sammenheng av månedene september, oktober og november på den nordlige halvkule og mars, april og mai på den sørlige halvkule. Den astronomiske høsten er perioden fra høstjevndøgn til vintersolverv, og de sammenfallende astrologiske høsttegnene er vekten, skorpionen og skytten. Innen meteorologien defineres høsten gjerne som den perioden da normal døgnmiddeltemperatur for det aktuelle stedet er mellom 0 og 10 °C og synkende. I artikkelen om årstid er oppgitt når høsten etter dette begynner en del steder i Norge. Navnet kommer av at innhøstingen av frukt, grønnsaker og korn som tradisjonelt skulle lagres til vinteren, startet i september.</p>
+                    <h4>Hvorfor høsten?</h4>
+                    <p>Høsten er tiden for jakt. Jakt, å oppspore og felle eller fange ville dyr og fugler. Jakt lar seg ikke klart avgrense fra fangst. Jakten i Norge deles i storviltjakt og småviltjakt. Storviltjakten omfatter jakt etter klovvilt som elg, hjort, villrein og rådyr. Den bygger på prinsippet om kvotefastsettelse etter minsteareal per dyr. Arealets størrelse fastsettes etter antall dyr i kommunen, tilgang på mat og eventuell skadevoldelse. Det trengs spesiell tillatelse fra kommunen eller fra Direktoratet for naturforvaltning for å jakte på storvilt.</p>
+                    <p id="raintext">La det falle løv: <button class="rain" onclick="rain('autumn')"><i class="fa fa-leaf"></i></button></p>
+                </div>
+            </div>
+            <div class="chapter">
+
+                <h1 class="chaptername">Aktiviteter</h1>
+                <div id="activitycontent">
+                    <button id="firstbtn" type="button" class="choice" data-content="#firstcontent">Jakt</button>
+                    <button id="secondbtn" type="button" class="choice" data-content="#secondcontent">Bærplukking</button>
+                    <button id="thirdbtn" type="button" class="choice" data-content="#thirdcontent">Potetplukking</button>
+                    <div id="firstcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <!-- BILDESTØRRELSE FRA BIRME SATT TIL 1000x850 px -->
+
+                                <img src="images/autumn/hunting.jpg" alt="bærplukking bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> September og utover høsten. Litt om vinteren.</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Norske fjell</p>
+                                <p>Som jeger er man en kulturbærer, og det skal man være stolt av. Vi høster av naturens overskudd uten at den forringes. Når man jakter er man en ambassadør for hele jegerstanden. Jakt er en gammel tradisjon som ligger i menneskets instinkt for å overleve. Frem til 1900-tallet var jakten nødvendig for å skaffe mat, men etter industrien tok over for kjøttproduksjonen ble det "å gå på jakt" en hobby som er meget populær blant Norges befolkning. I Norge berøres jakten av en rekke lover og forskrifter, med Viltloven som den mest sentrale. Den presiserer blant annet at alle som skal drive ordinær jakt må ha bestått jegerprøve og ha betalt den årlige jegeravgiften til staten. Småviltjakt har en aldersgrense på 16 år for å jakte, mens du ved storviltjakt må være fylt 18 år. Likevel er det mulig å delta i jakten fra det året du fyller 14 år ved å ha opplæringsjakt for småvilt, og fra 16 år for storvilt. For å jakte storvilt skal det også avlegges en årlig skyteprøve og betales årlig kontigent for jegerprøven. For jakt på hjort, elg og rådyr må du ha tilgang på ettersøkshund. Jakt er både en langvarig tradisjon og en nødvendighet i samfunnet for å hindre overpopulasjon av vilt.
+                                </p>
+                                <a href="https://www.njff.no/">Mer info er å finne på Norges Jeger- og Fiskeforbund sine hjemmesider</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="secondcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <img src="images/autumn/berryplucking.jpg" alt="bærplukking bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Midt på sommeren og utover høsten</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Norske fjell</p>
+                                <p>I utmark kan man plukke ville bær, sopp og blomster som man enten kan spise på stedet, ta med seg eller selge. Retten til å plukke ville bær i naturen er en allemannsrett. Allmennhetens høstingsrett er nå regulert i friluftsloven § 5 som trådte i kraft 1. januar 2012. Der står det at allmennheten under ferdsel i utmark kan plukke og ta med seg bl.a. ville bær, når det skjer hensynsfullt og med tilbørlig varsomhet. For molteplukking gjelder egne regler.</p>
+                                <a href="http://www.utogplukk.no/">Mer info om er å finne her</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="thirdcontent" class="content-container">
+                        <ul class="flex-container">
+                            <li class="flex-item">
+                                <img src="images/autumn/potatopicking.jpg" alt="potetplukking bilde" />
+                            </li>
+                            <li class="flex-item">
+                                <p class="iconinfo"><i class="fa fa-calendar"></i> Potetferien (høstferien)</p>
+                                <p class="iconinfo"><i class="fa fa-map-marker"></i> Norske åkere</p>
+                                <p>Potetknollen (poteten) er en meget allsidig sammensatt matvare som inneholder mange viktige næringsstoffer. Proteininnholdet er riktignok lavt, men det er av svært høy biologisk verdi. Det har med andre ord en aminosyresammensetning som samsvarer godt med vårt behov. Dette, kombinert med at potetplanten er nøysom og relativt lett å dyrke, gjør at poteten har hatt en svært stor betydning i kostholdet hos oss i Norge, ikke minst i krisesituasjoner. Fortsatt er forbruket av poteter relativt høyt i Norge (ca. 60 kg pr. person pr. år). Av ernæringsmessige grunner anbefales vi å spise mer poteter i ubearbeidet form og mindre bearbeidede poteter som snacks.</p>
+                                <a href="http://potatoes.com/our-farms/how-we-grow/">Besøk denne siden hvis du vil lære meg om poteter i USA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="musicchapter" class="chapter">
+                <h1 class="chaptername">Musikk til høsten</h1>
+                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/H7hGiZ579cs" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <a href="documentation.html"> Klikk her for dokumentasjon</a>
+    </footer>
+    <script src="js/destination.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/seasons.js"></script>
+    <script src="js/hamburger-toggle.js"></script>
+</body>
+
+</html>
