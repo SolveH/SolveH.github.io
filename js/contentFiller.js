@@ -52,48 +52,44 @@ const hobbyProjects = [
 
 fillWithProjects("#itprojects", itProjects);
 fillWithProjects("#personalprojects", hobbyProjects);
-/*
-var title = "Weebo";
-var piclink = "pictures/weebologo.jpg";
-var link = "https://github.com/roman-bachmann/ProjectWeebo";
-var time = "Spring 2017";
-var tools = "React, node.js, SQL, Bootstrap, CSS";
-var description = "<p>Through my 4th semester at NTNU we had a project course called <a href='https://www.ntnu.no/studier/emner/TDT4140'>Software Engineering</a>. In the project we had a huge focus on the working process, and learned a lot by executing the development process in a realistic way. The goal in this project was to create something that would improve the way of learning in universities."
-  + "<br />"
-  +  "Weebo is a learning platform where students are supposed to effectively find the best videos for any subchapter in a course. By letting teachers add chapters and associated subchapters to their course, and then allowing anyone related to the subject to share and vote videos for every subchapter, we created a product that could prove to be useful in many courses. Our student assistants, professors, ourselves and many others was pleased our product, so we got a product and a grade we are"  + "satisfied with. "
-  + "<br />"
-  + "To learn something new we used React, and saw that it proved to be very useful and efficient for designing user interfaces. We had a course about databases in the same semester, so we got familiar with using mySQL and backend with node.js in practice.</p>";
-var $itprojects = $("#itprojects");*/
 
 function fillWithProjects(projectTypeId, projects) {
   var $projectSection = $(projectTypeId);
   for (var i = 0; i < projects.length; i++) {
+    //Containing div for the current project with container row
     var $projectContainer = $("<div>", {class: "container project"});
     var $row = $("<div>", {class: "row"});
 
+    //Left column for picture
     var $col1 = $("<div>", {class: "col-sm-5"});
     var $img = $("<img>", {src: projects[i].piclink});
     $col1.append($($img));
     $row.append($($col1));
 
+    //Right column with all project info
     var $col2 = $("<div>", {class: "col-sm-7"});
     var $projectName = $("<h4>", {class: "media-heading"});
     var $projectLink;
-    if (projects[i].link.length >= 0) {
+    //Since the hobby projects does not have a link they are added inside paragraphs only
+    if (projects[i].link.length > 0) {
       $projectLink = $("<a>", {href: projects[i].link}).text(projects[i].title);
     } else {
       $projectLink = $("<p>").text(projects[i].title);
     }
     $projectName.append($projectLink);
     $col2.append($($projectName));
+    //Add the time the project was created with the calendar glyphicon
     var $projectTime = $("<p>", {class: "projecttime"});
     $projectTime.append($calGlyph + projects[i].time);
     $col2.append($projectTime);
 
+    //Add the tools that were used to create the project with wrench glyphicon
     var $projectTools = $("<p>", {class: "projecttime"});
     $projectTools.append($wrenchGlyph + projects[i].tools);
     $col2.append($projectTools);
 
+    /*Add description. Some descriptions have multiple paragraphs so the
+    description is added with paragraphs and everything. */
     $col2.append(projects[i].description);
 
     $row.append($($col2));
