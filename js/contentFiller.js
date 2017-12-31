@@ -29,7 +29,7 @@ const itProjects = [
     link: "http://www.fiolen.no",
     time: " January 2016",
     tools: " HTML, CSS, JavaScript",
-    description: '<p>My mother runs a gift shop in Stryn. After finishing my first course about web development I wanted to make a better website for her shop, since her old website was made with a bad "create your own website in 2 hours" application. I built the website from scratch using the technologies specified above.</p>'
+    description: '<p>My mother runs a gift shop in Stryn. After finishing my first course about web development I wanted to make a better website for her shop, since her old website was made with a way too simple "create your own website in 2 hours" application. I built the website from scratch using the technologies specified above.</p>'
   }
 ];
 const hobbyProjects = [
