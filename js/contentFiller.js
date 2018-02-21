@@ -15,7 +15,7 @@ const itProjects = [
     link: "seasons/index.html",
     time: " 11.-24. september 2017",
     tools: " HTML, CSS, JavaScript, jQuery, node.js",
-    description: "<p>Currently in my 5th semester at NTNU I'm taking a course called <a href='https://www.ntnu.no/studier/emner/IT2810'>Web Development</a>. This is a very practical, project-based course where we a lot about web development. First we had a project where we used basic HTML, CSS and JavaScript and had requirements about things like using CSS Flexbox. In our second project we made a website about seasons. We chose the theme ourselves, because the only requirement about theme was that we had to make a website for something we are grateful for. We created a website we think is beautiful, and it has many clever solutions.</p>"
+    description: "<p>In my 5th semester at NTNU I took a course called <a href='https://www.ntnu.no/studier/emner/IT2810'>Web Development</a>. It's is a very practical, project-based course where we learned a lot about web development. First we had a project where we used basic HTML, CSS and JavaScript and had requirements about things like using CSS Flexbox. In our second project we made a website about seasons. We chose the theme ourselves, because the only requirement about theme was that we had to make a website for something we are grateful for. We created a website we think is beautiful, and it has many clever solutions. After this project we had a project where we used React and HTML LocalStorage. For the fourth and last project we used Angular.js with node.js. We launched all of our projects on a Linux server at NTNU.</p>"
   }, {
     title: "Battery Management Systems",
     piclink: "pictures/bmsys.jpg",
