@@ -3,6 +3,18 @@ const $wrenchGlyph = ('<span class="glyphicon glyphicon-wrench"></span>');
 
 const itProjects = [
     {
+        title: "Using Virtual Reality for Artificial Intelligence Education",
+        piclink: "pictures/master_thesis.png",
+        link: "https://youtu.be/TvlN-dxAn4M",
+        time: "September 2019 - July 2020",
+        tools: "Unity, Oculus Quest, VRTK, Oculus Integration SDK",
+        description: "<p>For my master thesis I developed a Virtual Reality application for the Oculus Quest, where " +
+            "AI students can get an introduction to deep learning and neural networks in an escape room environment. " +
+            "The students walk around in different rooms in VR, having 6DoF in the Oculus Quest, which makes the experience " +
+            "highly immersive. I developed the application using Unity and my master thesis was met with interest and I got an " +
+            "A on the project. I also wrote an extended abstract for the HELMeTO2020 conference in Italy, where I presented my work.</p>"
+    },
+    {
         title: "Sammen om en jobb, Accenture Summer Internship",
         piclink: "pictures/SAJO_logo.png",
         link: "https://www.sammenomenjobb.no/",
@@ -15,6 +27,16 @@ const itProjects = [
             "and Ligthing Components, which are similar to React components. In addition to the CRM we developed for the organization, " +
             "we developed a solution in Salesforce Community, where mentors and mentees can follow up their mentoring programs. " +
             "The solution went live February 2020. </p>"
+    }, {
+        title: "Fiolen",
+        piclink: "pictures/fiolen.png",
+        link: "https://www.fiolen.no",
+        time: " January 2016",
+        tools: " HTML, CSS, JavaScript, jQuery, Bootstrap 4",
+        description: '<p>My mother runs a gift shop in Stryn. I have worked there multiple summers and since my 2nd year of ' +
+            'computer science I have been developing the shop`s websites. I have developed and designed the different websites and ' +
+            'tried to use third-party components when possible. I am also administering the hosting of the web pages and ' +
+            'the shop`s email solution at G Suite.</p>'
     }, {
         title: "Weebo",
         piclink: "pictures/weebologo.jpg",
@@ -36,13 +58,6 @@ const itProjects = [
         time: " Autumn 2015",
         tools: " HTML, CSS, JavaScript, Bootstrap",
         description: "<p>Already in my first semester at NTNU we had a project in <a href='https://www.ntnu.no/studier/emner/IT2805'>Web Technologies</a>, which is a course where we learned the basics about web development with HTML, CSS and JavaScript. In this project all of us worked on the different parts of the website, but I made things like the picture slide. Our customer was satisfied with the design of the website, and a member of our group was hired to keep developing the website.</p>"
-    }, {
-        title: "Fiolen",
-        piclink: "pictures/fiolen.png",
-        link: "http://www.fiolen.no",
-        time: " January 2016",
-        tools: " HTML, CSS, JavaScript",
-        description: '<p>My mother runs a gift shop in Stryn. After finishing my first course about web development I wanted to make a better website for her shop, since her old website was made with a way too simple "create your own website in 2 hours" application. I built the website from scratch using the technologies specified above.</p>'
     }
 ];
 const hobbyProjects = [
