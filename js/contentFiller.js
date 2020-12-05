@@ -12,8 +12,8 @@ const itProjects = [
       "<p>For my master thesis I developed a Virtual Reality application for the Oculus Quest, where " +
       "AI students can get an introduction to deep learning and neural networks in an escape room environment. " +
       "The students walk around in different rooms in VR, having 6DoF in the Oculus Quest, which makes the experience " +
-      "highly immersive. I developed the application using Unity and my master thesis was met with interest and I got an " +
-      "A on the project. I also wrote an extended abstract for the HELMeTO2020 conference in Italy, where I presented my work. " +
+      "highly immersive. I developed the application using Unity and my master thesis was met with interest. " +
+      "I also wrote an extended abstract for the HELMeTO2020 conference in Italy, where I presented my work. " +
       "The project was graded with an A, and the full paper paper was accepted as well, and will be published as a Springer paper.</p > ",
   },
   {
