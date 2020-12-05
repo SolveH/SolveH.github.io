@@ -70,7 +70,7 @@ const itProjects = [
   {
     title: "Battery Management Systems",
     piclink: "pictures/bmsys.jpg",
-    link: "http://folk.ntnu.no/martlun/final_edition/index/index.html#",
+    link: "https://www.ntnu.no/studier/emner/IT2805",
     time: " Autumn 2015",
     tools: " HTML, CSS, JavaScript, Bootstrap",
     description:
