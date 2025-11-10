@@ -3,115 +3,132 @@
 
 <head>
     <title>Sølve</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/ico" href="pictures/favicon.ico">
     <script src="bootstrap-3.3.7-dist/js/jquery-3.7.1.min.js"></script>
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
-    <header>
-        <nav id="navbar" class="navbar navbar-default navbar-fixed-top hidden-xs">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#aboutme">ABOUT ME</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-
+<header>
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top hidden-xs">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-        </nav>
-    </header>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#aboutme">ABOUT ME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
 
 
-    <div>
-        <div id="topimg" class="jumbotron">
-            <h3 style="color: white; font-family: 'Concert One';text-align: center; padding-top: 45px;">Hey there, I'm</h3>
-            <h1 id="name" style="color: white; font-family: 'Concert One';text-align: center"><span>SØLVE BØ HUNVIK</span></h1>
+<div>
+    <div id="topimg" class="jumbotron">
+        <h3 style="color: white; font-family: 'Concert One';text-align: center; padding-top: 45px;">Hey there, I'm</h3>
+        <h1 id="name" style="color: white; font-family: 'Concert One';text-align: center"><span>SØLVE BØ HUNVIK</span>
+        </h1>
+    </div>
+</div>
+<a class="anchor" id="aboutme"></a>
+<h1 class="chapter">About me</h1>
+<div id="persona">
+    <div class="media">
+        <div class="media-left media-top">
+            <img id="solve" alt="picture of me" src="pictures/SOLVEH.jpg" class="media-object">
+        </div>
+        <div class="media-body">
+            <h2 class="media-heading">Sølve Bø Hunvik</h2>
+            <p><span class="glyphicon glyphicon-education"></span> <a href="https://www.netcompany.com/">Senior
+                Architect, Netcompany, Norway, Oslo</a></p>
+            <p>Welcome to my personal website. On this website you will get to know me and read about my projects.
+                I grew up in a small town in Norway called Stryn, where I went to school until I moved to Stavanger in
+                2014 to go to a folk high school.
+                I studied short films and had a really fun year there, which gave me the motivation to pursue my
+                interest in IT afterwards.
+            <p> After that year I started studying Informatics in Trondheim, and took a bachelor. I became very
+                interested in web development, AI and VR.
+                After my bachelor I started taking a MSc degree in Informatics, specializing in Software Engineering.
+                The courses I took during my master's degree was more related to architecture and security, which made
+                me really interested the full picture of a software development project and developing high quality
+                products.
+                I have also been a teaching assistant twice in both Web Technologies and in Software Engineering. After
+                my 4th year I also had a summer internship in Accenture in Oslo.
+                For my master thesis I designed, developed and user tested a VR application for giving students an
+                introduction to deep learning and neural networks. I developed it in Unity for the Oculus Quest. <a
+                        href="https://youtu.be/TvlN-dxAn4M">Check out a 5-minute video about it here</a>.
+            <p> Currently I work as a IT Consultant with the position of Senior Architect in Netcompany in Oslo. I have
+                worked on various project and have gotten a broad experience in web development, microservices, DevOps,
+                development platforms (onprem and cloud). I have built a solid foundation in Java/Kotlin in Spring Boot
+                applications, where I have worked with REST APIs, various SQL databases, asynchronous message queues and
+                search engines. I have also worked built experience with Kubernetes, Docker, CI/CD pipelines, Helm,
+                monitoring and logging tools. Also, I have worked a bit with Vue.js and React frontend applications.
+            </p>
         </div>
     </div>
-    <a name="aboutme" class="anchor" id="aboutme"></a>
-    <h1 id="chapter">About me</h1>
-    <div id="persona" name="aboutme">
-        <div class="media">
-            <div class="media-left media-top">
-                <img id="solve" alt="picture of me" src="pictures/SOLVEH.jpg" class="media-object">
-            </div>
-            <div class="media-body">
-                <h2 class="media-heading">Sølve Bø Hunvik</h2>
-                <p><span class="glyphicon glyphicon-education"></span> <a href="https://www.netcompany.com/">Senior Architect, Netcompany, Norway, Oslo</a></p>
-                <p>Welcome to my personal website. On this website you will get to know me and read about my projects. 
-                    I grew up in a small town in Norway called Stryn, where I went to school until I moved to Stavanger in 2014 to go to a folk high school. 
-                    I studied short films and had a really fun year there, which gave me the motivation to pursue my interest in IT afterwards. 
-                <p> After that year I started studying Informatics in Trondheim, and took a bachelor. I became very interested in web development and AI. 
-                    After my bachelor I started taking a MSc degree in Informatics, specializing in Software Engineering. 
-                    The courses I took during my master's degree was more related to architecture and security, which made me really interested the full picture of a software development project and developing high quality products. 
-                    I have also been a teaching assistant twice in both Web Technologies and in Software Engineering. After my 4th year I also had a summer internship in Accenture in Oslo. 
-                    For my master thesis I designed, developed and user tested a VR application for giving students an introduction to deep learning and neural networks. I developed it in Unity for the Oculus Quest. <a href="https://youtu.be/TvlN-dxAn4M">Check out a 5-minute video about it here</a>. 
-                <p> Currently I work as a IT Consulant in Netcompany in Oslo. I'm on a project for OBOS, where I work mainly as a backend developer, but I also have some frontend tasks. 
-                    We're developing and maintaining their 140+ microservices which are running in their cluster. 
-                </p>
-            </div>
-        </div>
+</div>
+<a class="anchor" id="projects"></a>
+<h1 class="chapter">Projects</h1>
+<div class="btn-group">
+    <button id="itprojectsbtn" type="button" class="choice" onclick="itprojectClick()">IT projects</button>
+    <button id="personalprojectsbtn" type="button" class="choice" onclick="personalprojectClick()">Personal projects
+    </button>
+</div>
+<div id="itprojects" class="content">
+    <!-- This div is filled by the data in itProjects from contentFiller.js -->
+</div>
+<div id="personalprojects" class="content">
+    <!-- This div is filled by the data in hobbyProjects from contentFiller.js -->
+</div>
+<a class="anchor" id="contact"></a>
+<h1 class="chapter">Contact</h1>
+<div id="contactcontent">
+    <p style="text-align:center;">Here you can find me on social media, GitHub or contact me via email. </p>
+    <p style="text-align:center;">Thank you for visiting my website.</p>
+    <div id="logos">
+        <a href="https://www.facebook.com/Solveh">
+            <img src="pictures/fblogo.png" alt="Facebook picture link"/>
+        </a>
+        <a href="https://www.instagram.com/solvgutt/">
+            <img src="pictures/instalogo.png" alt="Instagram picture link"/>
+        </a>
+        <a href="https://www.linkedin.com/in/solve-bo-hunvik/">
+            <img src="pictures/linkedinlogo.png" alt="Linkedin picture link"/>
+        </a>
+        <a href="https://github.com/SolveH">
+            <img src="pictures/githublogo.png" alt="Github picture link"/>
+        </a>
+        <a href="mailto:srb.hunvik@gmail.com">
+            <img src="pictures/gmaillogo.png" alt="Gmail picture link"/>
+        </a>
     </div>
-    <a name="projects" class="anchor" id="projects"></a>
-    <h1 id="chapter">Projects</h1>
-    <div class="btn-group">
-        <button id="itprojectsbtn" type="button" class="choice" onclick="itprojectClick()">IT projects</button>
-        <button id="personalprojectsbtn" type="button" class="choice" onclick="personalprojectClick()">Personal projects</button>
-    </div>
-    <div id="itprojects" class="content">
-        <!-- This div is filled by the data in itProjects from contentFiller.js -->
-    </div>
-    <div id="personalprojects" class="content">
-        <!-- This div is filled by the data in hobbyProjects from contentFiller.js -->
-    </div>
-    <a name="contact" class="anchor" id="contact"></a>
-    <h1 id="chapter">Contact</h1>
-    <div id="contactcontent">
-        <p style="text-align:center;">Here you can find me on social media, Github or contact me via email. </p>
-        <p style="text-align:center;">Thank you for visiting my website.</p>
-        <div id="logos">
-            <a href="https://www.facebook.com/Solveh">
-                <img src="pictures/fblogo.png" alt="Facebook picture link" />
-            </a>
-            <a href="https://www.instagram.com/solvgutt/">
-                <img src="pictures/instalogo.png" alt="Instagram picture link" />
-            </a>
-            <a href="https://www.linkedin.com/in/solve-bo-hunvik/">
-                <img src="pictures/linkedinlogo.png" alt="Linkedin picture link" />
-            </a>
-            <a href="https://github.com/SolveH">
-                <img src="pictures/githublogo.png" alt="Github picture link" />
-            </a>
-            <a href="mailto:srb.hunvik@gmail.com">
-                <img src="pictures/gmaillogo.png" alt="Gmail picture link" />
-            </a>
-        </div>
-    </div>
-    <script type="text/javascript" src="js/panelChanger.js"></script>
-    <script type="text/javascript" src="js/smoothScroller.js"></script>
-    <script type="text/javascript" src="js/contentFiller.js"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</div>
+<script type="text/javascript" src="js/panelChanger.js"></script>
+<script type="text/javascript" src="js/smoothScroller.js"></script>
+<script type="text/javascript" src="js/contentFiller.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
