@@ -85,7 +85,7 @@ const hobbyProjects = [
         time: " November 2025",
         tools: " Raspberry Pi Zero, MAX7219 LED dot matrix display, Python, Entur Journey Planner API",
         description:
-            "<p>I wanted an efficient and stylish way to see when the next two departure times for the subway I usually take for work in my hallway. All without having to pick up my phone and search.</p>",
+            "<p>I wanted an efficient and stylish way to see when the next two departure times for the subway I usually take for work in my hallway. All without having to pick up my phone and search. Since I had a Raspberry Pi Zero lying around and ordered the MAX7219 display on AliExpress I had the perfect November project.</p>",
     },
     {
         title: "Lada",
