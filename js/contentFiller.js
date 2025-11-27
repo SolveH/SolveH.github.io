@@ -85,7 +85,7 @@ const hobbyProjects = [
         time: " November 2025",
         tools: " Raspberry Pi Zero, MAX7219 LED dot matrix display, Python, Entur Journey Planner API",
         description:
-            "<p>I wanted an efficient and stylish way to see when the next two departure times for the subway I usually take for work in my hallway. All without having to pick up my phone and search. Since I had a Raspberry Pi Zero lying around and ordered the MAX7219 display on AliExpress I had the perfect November project. I also got to do some more old-school programming and threading which was quite fun. Read more in the Github repo.</p>",
+            "<p>I wanted an efficient and stylish way to see when the next two departure times for the subway I usually take for work in my hallway. All without having to pick up my phone and search. Since I had a Raspberry Pi Zero lying around and ordered the MAX7219 display on AliExpress I had the perfect November project. I also got to do some more old-school programming and ran into some fun optimization challenges to avoid stutter on the display. I solved this with threading, a custom cache and only updating the text when it actually changes. Read more in the Github repo.</p>",
     },
     {
         title: "Lada",
